@@ -104,7 +104,11 @@ a:hover, a:focus {
     padding: 4rem;
 }
 
-.main-body > h2 {
+.main-body-heading {
+    max-width: 500px;
+}
+
+.main-body-heading > h2 {
     margin-top: 4rem;
     margin-bottom: 8rem;
 }
@@ -164,12 +168,9 @@ a:hover, a:focus {
         flex-wrap: wrap;
         max-width: 992px;
     }
+
     .news-card {
         width: calc((100% - 39px - 6px)/3);
-    }
-
-    .main-body > h2 {
-        max-width: 992px;
     }
 }
 
@@ -178,9 +179,38 @@ a:hover, a:focus {
 @media screen and (min-width: 992px) {
     .navbar-list {
         display: block;
+        float: right;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navbar-list > ul {
+        text-decoration: none;
+    }
+
+    .navbar-list > ul > li {
+        display: inline;
+        font-size: 18px;
+        color: #FFFFFF;
+        margin-right: 3rem;
+    }
+
+    .navbar-list > button {
+        display: inline;
+        border: 2px solid #FFFFFF;
+        border-radius: 0.9rem;
+        background-color: transparent;
+        color: #FFFFFF;
+        padding: 1rem 3rem;
+        font-weight: 500;
+        font-size: 2rem;
     }
 
     .hamburger {
         display: none;
+    }
+
+    .news-cards-wrapper {
+        max-width: 1440px
     }
 }
