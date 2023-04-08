@@ -1,0 +1,174 @@
+/* Basic Style */
+html {
+    font-size: 0.6em;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Libre Caslon Display', serif;
+    font-weight: 400;
+    font-size: 6rem;
+    color: #FFFFFF;
+    line-height: 7rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #3b82f6;
+  }
+
+a:hover, a:focus {
+    color: #1d4ed8;
+}
+
+/* Mobile View */
+
+.hero-wrapper {
+    background-image: url(./img/hero-background.png);
+    background-repeat: no-repeat;
+    height: 90rem;
+    margin: 0;
+    padding: 4rem;
+    background-size: cover;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 3rem;
+    display: inline;
+}
+
+.navbar-list {
+    display: none;
+}
+
+.hamburger {
+    float: right;
+    color: #FFFFFF;
+}
+
+.hamburger > i {
+    font-size: 3.5rem;
+}
+
+.hero-body {
+    margin-top: 20rem;
+}
+
+.hero-body > h1 {
+    margin: 4rem 0;
+}
+
+.hero-body > p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #FFFFFF;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.hero-body > button {
+    border: 2px solid #FFFFFF;
+    border-radius: 0.9rem;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 1rem 3rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.rectangle-box {
+    height: 2rem;
+    width: 11rem;
+    background-color: #FFFFFF;
+}
+
+.main-body {
+    margin: 0;
+    padding: 4rem;
+}
+
+.main-body > h2 {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.news-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 4rem
+}
+
+.news-card {
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5rem;
+}
+
+.news-card:hover {
+    cursor:pointer;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.news-card-image > img {
+    width: 100%;
+    object-fit: cover;
+    height: 40rem;
+}
+
+.news-card-body {
+    padding: 4rem;
+}
+
+.card-date {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #B7B7B7;
+}
+
+.news-card-body > h2 {
+    line-height: 3rem;
+}
+
+.card-link {
+    float: right;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #D9852C;
+}
+
+/* Tablet View */
+
+@media screen and (min-width: 576px) {
+
+}
+
+/* Desktop View */
+
+@media screen and (min-width: 992px) {
+    .navbar-list {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
